@@ -4,23 +4,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Karthika Pillai Kumar | Portfolio</title>
-  <meta name="description" content="Karthika Pillai Kumar — Master's in Data Science (Monash) | Ex-IBM — Data, Analytics, Automation & Security-aware Systems" />
+  <meta name="description" content="Karthika Pillai Kumar — MS Data Science @ Monash | Ex-IBM — Data Platforms, Automation, Security & Analytics" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="topbar">
-    <div class="container topbar__inner">
-      <a class="brand" href="#top">Karthika Pillai Kumar</a>
+    <div class="container bar">
+      <a class="brand" href="#top">Karthika</a>
 
       <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
+        <a href="#impact">Impact</a>
         <a href="#projects">Projects</a>
-        <a href="#awards">Awards</a>
-        <a href="#outside">Outside of Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#outside">Outside</a>
       </nav>
 
       <button class="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
@@ -30,41 +32,61 @@
   <main id="top">
     <!-- HERO -->
     <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__left">
-          <p class="kicker">Master’s in Data Science @ Monash | Ex-IBM</p>
-          <h1>Karthika Pillai Kumar</h1>
-          <p class="subtitle">
-            I build reliable, security-aware data systems — and translate complexity into decisions teams can trust.
-          </p>
-
-          <div class="ctaRow">
-            <a class="btn primary" href="#experience">Experience</a>
-            <a class="btn" href="#projects">Projects</a>
+      <div class="container heroGrid">
+        <div class="heroLeft">
+          <div class="badgeRow">
+            <span class="badge">MS Data Science @ Monash</span>
+            <span class="badge ghost">Ex-IBM · watsonx.data (Presto)</span>
           </div>
 
-          <div class="links">
+          <h1>
+            I build <span class="grad">trustworthy data systems</span><br/>
+            that ship cleanly, run fast, and fail less.
+          </h1>
+
+          <p class="lead">
+            Automation • Reliability • Security-aware engineering • Analytics.
+          </p>
+
+          <div class="quickFacts">
+            <div class="qf"><div class="qfNum">50%</div><div class="qfTxt">less manual work via automation</div></div>
+            <div class="qf"><div class="qfNum">25%</div><div class="qfTxt">faster QA processing time</div></div>
+            <div class="qf"><div class="qfNum">20%</div><div class="qfTxt">query performance lift (caching)</div></div>
+          </div>
+
+          <div class="cta">
+            <a class="btn primary" href="#projects">Featured Projects</a>
+            <a class="btn" href="#experience">Experience</a>
+          </div>
+
+          <div class="meta">
             <a href="mailto:karthikapillai@gmail.com">karthikapillai@gmail.com</a>
             <span class="dot">•</span>
             <span>Melbourne, VIC</span>
-          </div>
-
-          <div class="social">
-            <a href="https://www.linkedin.com/in/karthikapillaikumar/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href="https://github.com/KarthikaPKumar" target="_blank" rel="noreferrer">GitHub</a>
+            <span class="dot">•</span>
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/karthikapillaikumar/">LinkedIn</a>
+            <span class="dot">•</span>
+            <a target="_blank" rel="noreferrer" href="https://github.com/KarthikaPKumar">GitHub</a>
           </div>
         </div>
 
-        <div class="hero__right">
-          <div class="avatarWrap">
-            <img class="avatar" src="assets/headshot.jpg" alt="Headshot of Karthika Pillai Kumar" />
+        <div class="heroRight">
+          <div class="portraitCard">
+            <img class="portrait" src="assets/headshot.jpg" alt="Headshot of Karthika Pillai Kumar" />
+            <div class="portraitFooter">
+              <div class="pfTitle">Focus</div>
+              <div class="chips">
+                <span class="chip">Data Platforms</span>
+                <span class="chip">Automation</span>
+                <span class="chip">Security</span>
+                <span class="chip">Analytics</span>
+              </div>
+            </div>
           </div>
 
-          <div class="card note">
-            <p class="note__title">Focus areas</p>
-            <p class="note__body">
-              Data platforms • Automation • Security & trust • Analytics-driven engineering
-            </p>
+          <div class="sideNote">
+            <div class="sideNoteTitle">Signature style</div>
+            <p>Small improvements → big reliability wins (especially under scale).</p>
           </div>
         </div>
       </div>
@@ -72,146 +94,44 @@
 
     <!-- ABOUT -->
     <section id="about" class="section">
-      <div class="container">
-        <h2>About</h2>
-        <div class="prose">
-          <p>
-            I’m deeply interested in data engineering, data science, and analytics, with a focus on using data to inform decisions and improve products.
-          </p>
-          <p>
-            I previously worked at IBM India Software Labs on the watsonx.data Presto engine, contributing across automation, reliability,
-            and security remediation. That experience shaped how I approach engineering: with clarity, consistency, and attention to risk.
-          </p>
-          <p>
-            I’m currently pursuing a Master’s in Data Science at Monash University, strengthening my skills in analytics, modelling, and data-driven problem solving.
-            I enjoy learning new systems from the ground up and collaborating with teams that value thoughtful execution.
-          </p>
+      <div class="container twoCol">
+        <div>
+          <h2>About</h2>
+          <p class="p">I’m deeply interested in data engineering, data science, and analytics—especially where trust and reliability matter.</p>
+          <p class="p">At IBM India Software Labs, I worked on the watsonx.data Presto engine across automation, reliability, and security remediation.</p>
+          <p class="p">Now, I’m pursuing a Master’s in Data Science at Monash University, strengthening my skills in modelling, analysis, and building data-driven solutions.</p>
+        </div>
+
+        <div class="callout">
+          <h3>What you’ll get from me</h3>
+          <ul>
+            <li><strong>Ownership:</strong> I take systems seriously—especially where trust matters.</li>
+            <li><strong>Clarity:</strong> I communicate cleanly across technical + non-technical teams.</li>
+            <li><strong>Momentum:</strong> I ship improvements fast, then harden them.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section alt">
+    <!-- IMPACT -->
+    <section id="impact" class="section alt">
       <div class="container">
-        <h2>Skills</h2>
-
-        <div class="grid2">
+        <h2>Impact highlights</h2>
+        <div class="grid3">
           <div class="card">
-            <h3>Programming & Data</h3>
-            <ul>
-              <li>Python (NumPy, Pandas, Matplotlib)</li>
-              <li>SQL</li>
-              <li>Java</li>
-              <li>Excel (Pivot Tables, VLOOKUP, Macros)</li>
-            </ul>
+            <h3>Automation</h3>
+            <p>Scripts + CLIs that reduced repetitive operational work.</p>
+            <div class="statRow"><span class="stat">~50%</span><span class="muted">less manual effort</span></div>
           </div>
-
           <div class="card">
-            <h3>Visualization & Reporting</h3>
-            <ul>
-              <li>Power BI</li>
-              <li>Tableau</li>
-              <li>Stakeholder-ready reporting</li>
-            </ul>
+            <h3>Reliability</h3>
+            <p>Release quality improvements through targeted fixes and process hardening.</p>
+            <div class="statRow"><span class="stat">~10%</span><span class="muted">higher release success</span></div>
           </div>
-
           <div class="card">
-            <h3>Platforms & Tools</h3>
-            <ul>
-              <li>Presto, Hadoop</li>
-              <li>Docker, Git/GitHub, Linux</li>
-              <li>IBM Cloud</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Strengths</h3>
-            <ul>
-              <li>Automation & process improvement</li>
-              <li>Security-aware engineering</li>
-              <li>Cross-functional collaboration</li>
-              <li>Adaptability & clear communication</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <div class="container">
-        <h2>Experience</h2>
-
-        <div class="timeline">
-          <article class="item">
-            <div class="item__meta">
-              <span class="pill">Sep 2025 – Present</span>
-              <span class="place">Woolworths · Melbourne</span>
-            </div>
-            <h3>Customer Service Representative</h3>
-            <ul>
-              <li>Handled high-volume transactions with accuracy and strong attention to detail.</li>
-              <li>Maintained reliable records and delivered consistent customer experience under time pressure.</li>
-            </ul>
-          </article>
-
-          <article class="item">
-            <div class="item__meta">
-              <span class="pill">Aug 2025 – Present</span>
-              <span class="place">Junior Engineers · Melbourne</span>
-            </div>
-            <h3>Coding Instructor</h3>
-            <ul>
-              <li>Taught 3 in-person lessons weekly to students aged 6–12 (avg. class size ~10).</li>
-              <li>Adapted delivery for diverse learning styles and trained 4 new instructors on tools and teaching methods.</li>
-            </ul>
-          </article>
-
-          <article class="item">
-            <div class="item__meta">
-              <span class="pill">Aug 2022 – Jan 2025</span>
-              <span class="place">IBM India Software Labs · Kochi</span>
-            </div>
-            <h3>Software Developer — watsonx.data</h3>
-            <ul>
-              <li>Built automation scripts and CLI tools reducing manual effort (~50%) and QA time (~25%).</li>
-              <li>Improved release reliability (~10%) via targeted fixes and process hardening.</li>
-              <li>Implemented audit logging (CADF format) to support threat detection and observability.</li>
-              <li>Contributed to open-source Presto and improved query performance through caching enhancements (~20%).</li>
-            </ul>
-          </article>
-
-          <article class="item">
-            <div class="item__meta">
-              <span class="pill">Jan 2022 – Jul 2022</span>
-              <span class="place">IBM India Software Labs</span>
-            </div>
-            <h3>Software Developer Intern</h3>
-            <ul>
-              <li>Analysed source code and remediated vulnerabilities across modules to strengthen product security.</li>
-              <li>Supported stability improvements through fixes and validation.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education" class="section alt">
-      <div class="container">
-        <h2>Education</h2>
-
-        <div class="grid2">
-          <div class="card">
-            <h3>Monash University</h3>
-            <p class="muted">Master of Data Science · Feb 2025 – Dec 2026</p>
-            <p>Analytics, modelling, and data-driven solutions.</p>
-          </div>
-
-          <div class="card">
-            <h3>TKM College of Engineering</h3>
-            <p class="muted">B.Tech (Hons.) Computer Science & Engineering · Jul 2018 – May 2022</p>
-            <p>CGPA: 8.61/10</p>
+            <h3>Performance</h3>
+            <p>Caching enhancements and Presto ecosystem contributions.</p>
+            <div class="statRow"><span class="stat">~20%</span><span class="muted">query performance lift</span></div>
           </div>
         </div>
       </div>
@@ -220,79 +140,131 @@
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="container">
-        <h2>Projects</h2>
+        <div class="sectionHead">
+          <h2>Featured projects</h2>
+          <p class="muted">Scannable, outcome-led highlights.</p>
+        </div>
 
         <div class="grid2">
-          <div class="card">
-            <h3>AI-Assisted Speech Analysis</h3>
-            <p class="muted">Python · Watson NLU</p>
-            <p>NLP-based speech feedback on rate, pronunciation, and vocabulary to support continuous improvement.</p>
+          <a class="proj" href="#" aria-label="AI-Assisted Speech Analysis">
+            <div class="projTop">
+              <h3>AI-Assisted Speech Analysis</h3>
+              <div class="chips"><span class="chip">Python</span><span class="chip">NLP</span><span class="chip">Watson NLU</span></div>
+            </div>
+            <p>Speech feedback on rate, pronunciation, and vocabulary for continuous improvement.</p>
+          </a>
+
+          <a class="proj" href="#" aria-label="Driver Drowsiness Detection">
+            <div class="projTop">
+              <h3>Driver Drowsiness Detection (CNN)</h3>
+              <div class="chips"><span class="chip">TensorFlow</span><span class="chip">OpenCV</span><span class="chip">CV</span></div>
+            </div>
+            <p>Fatigue detection model (~80% accuracy) using facial keypoints + behaviour patterns.</p>
+          </a>
+
+          <a class="proj" href="#" aria-label="Waste Collection Platform">
+            <div class="projTop">
+              <h3>Waste Collection Platform</h3>
+              <div class="chips"><span class="chip">Django</span><span class="chip">Python</span><span class="chip">Analytics</span></div>
+            </div>
+            <p>Marketplace + analytics to recommend efficient compensation structures for providers.</p>
+          </a>
+
+          <a class="proj" href="https://github.com/KarthikaPKumar" target="_blank" rel="noreferrer" aria-label="Open-source work">
+            <div class="projTop">
+              <h3>Open-source & Engineering Work</h3>
+              <div class="chips"><span class="chip">Presto</span><span class="chip">Performance</span><span class="chip">Systems</span></div>
+            </div>
+            <p>Query performance, caching behaviour, and reliability improvements.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2>Experience</h2>
+
+        <div class="xp">
+          <div class="xpCard">
+            <div class="xpHead">
+              <div>
+                <div class="xpRole">Software Developer — watsonx.data</div>
+                <div class="xpOrg">IBM India Software Labs · Kochi</div>
+              </div>
+              <div class="xpTime">Aug 2022 – Jan 2025</div>
+            </div>
+            <ul>
+              <li>Built automation tools reducing manual effort (~50%) and QA time (~25%).</li>
+              <li>Implemented audit logging (CADF) to strengthen observability and proactive detection.</li>
+              <li>Improved release reliability (~10%) and contributed to caching-based performance work (~20%).</li>
+            </ul>
           </div>
 
-          <div class="card">
-            <h3>Driver Drowsiness Detection (CNN)</h3>
-            <p class="muted">TensorFlow · OpenCV</p>
-            <p>Fatigue detection model (~80% accuracy) using facial keypoint tracking and behaviour pattern analysis.</p>
-          </div>
+          <div class="xpRow">
+            <div class="xpMini">
+              <div class="xpHead">
+                <div>
+                  <div class="xpRole">Coding Instructor</div>
+                  <div class="xpOrg">Junior Engineers · Melbourne</div>
+                </div>
+                <div class="xpTime">Aug 2025 – Present</div>
+              </div>
+              <ul><li>Taught Python to students (6–12) and trained 4 new instructors.</li></ul>
+            </div>
 
-          <div class="card">
-            <h3>Waste Collection Platform</h3>
-            <p class="muted">Django · Python</p>
-            <p>Web platform connecting waste generators and collectors; analysed ops data to recommend efficient compensation structures.</p>
-          </div>
-
-          <div class="card">
-            <h3>Open-Source Work</h3>
-            <p class="muted">Presto · Performance</p>
-            <p>Contributions focused on query performance and caching behaviour in analytics workloads.</p>
+            <div class="xpMini">
+              <div class="xpHead">
+                <div>
+                  <div class="xpRole">Customer Service Representative</div>
+                  <div class="xpOrg">Woolworths · Melbourne</div>
+                </div>
+                <div class="xpTime">Sep 2025 – Present</div>
+              </div>
+              <ul><li>High-accuracy work under pressure; strong ownership and discipline.</li></ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- AWARDS -->
-    <section id="awards" class="section alt">
+    <!-- SKILLS -->
+    <section id="skills" class="section">
       <div class="container">
-        <h2>Awards</h2>
-
-        <div class="grid2">
-          <div class="card">
-            <h3>Competitions</h3>
-            <ul>
-              <li>Winner — Make-A-Ton Hackathon (2019)</li>
-              <li>Winner — IEDC Idea Pitching Contest, Kerala Startup Mission (2021)</li>
-              <li>Winner — Steps Abstract Competition, Pragya (2021)</li>
-              <li>2nd Prize — CSI Project Presentation, Exposition (2021)</li>
-              <li>National Engineering Olympiad 4.0 — Qualified Round 1</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>Creative</h3>
-            <ul>
-              <li>Champion — Freestyle Choreography, Tarang Arts Festival (2023 & 2024)</li>
-            </ul>
-          </div>
+        <h2>Skills</h2>
+        <div class="grid3">
+          <div class="card"><h3>Languages</h3><p class="muted">Python · SQL · Java</p></div>
+          <div class="card"><h3>Data & BI</h3><p class="muted">Pandas · Excel · Power BI · Tableau</p></div>
+          <div class="card"><h3>Systems</h3><p class="muted">Presto · Hadoop · Docker · Git · Linux</p></div>
         </div>
       </div>
     </section>
 
     <!-- OUTSIDE -->
-    <section id="outside" class="section">
-      <div class="container">
-        <h2>Outside of Work</h2>
-
-        <div class="card">
-          <p>
-            I’m active in dance and enjoy creative practice alongside technical work — it keeps me disciplined and expressive.
-            I also enjoy volunteering and contributing to communities that help others learn and grow.
-          </p>
+    <section id="outside" class="section alt">
+      <div class="container twoCol">
+        <div>
+          <h2>Outside of work</h2>
+          <p class="p">Dance keeps me sharp—discipline, timing, and creativity carry into how I build and iterate.</p>
+          <p class="p">I also enjoy volunteering and contributing to communities that help others learn and grow.</p>
         </div>
 
-        <footer class="footer">
-          <p class="muted">© <span id="year"></span> Karthika Pillai Kumar</p>
-        </footer>
+        <div class="callout">
+          <h3>Let’s connect</h3>
+          <p class="muted">Open to opportunities across data engineering, analytics, and platform-focused roles.</p>
+          <div class="cta">
+            <a class="btn primary" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/karthikapillaikumar/">Connect on LinkedIn</a>
+            <a class="btn" href="mailto:karthikapillai@gmail.com">Email me</a>
+          </div>
+        </div>
       </div>
+
+      <footer class="footer">
+        <div class="container foot">
+          <span class="muted">© <span id="year"></span> Karthika Pillai Kumar</span>
+        </div>
+      </footer>
     </section>
   </main>
 
