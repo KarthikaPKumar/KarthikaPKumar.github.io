@@ -108,3 +108,51 @@
     });
   }
 })();
+(() => {
+  const filters = document.querySelector('.project-filters');
+  const cards = [...document.querySelectorAll('[data-category]')];
+  if (filters) {
+    filters.hidden = false;
+    filters.addEventListener('click', event => {
+      const button = event.target.closest('button[data-filter]');
+      if (!button) return;
+      filters.querySelectorAll('button').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
+      let count = 0;
+      cards.forEach(card => {
+        card.hidden = button.dataset.filter !== 'all' && card.dataset.category !== button.dataset.filter;
+        if (!card.hidden) { count++; card.classList.add('visible'); }
+      });
+      document.querySelector('#project-count').textContent = `${count} project${count === 1 ? '' : 's'} to explore`;
+    });
+  }
+  const form = document.querySelector('#contact-form');
+  if (!form) return;
+  form.hidden = false;
+  const status = document.querySelector('#contact-status');
+  const message = document.querySelector('#contact-message');
+  message.addEventListener('input', () => {
+    document.querySelector('#message-count').textContent = message.value.length.toLocaleString('en-AU');
+    status.textContent = '';
+  });
+  const draft = () => {
+    const data = new FormData(form);
+    return {subject: String(data.get('topic')), body: `Hi Kathy,\n\n${String(data.get('message')).trim()}\n\n${String(data.get('name')).trim()}\nReply to: ${String(data.get('email')).trim()}`};
+  };
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    if (!form.reportValidity()) return;
+    const {subject, body} = draft();
+    status.textContent = 'Your draft is ready in your email app. If it did not open, use Copy message and email me directly.';
+    window.location.href = `mailto:karthikapillai@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+  document.querySelector('#copy-message').addEventListener('click', async () => {
+    if (!form.reportValidity()) return;
+    const {subject, body} = draft();
+    try {
+      await navigator.clipboard.writeText(`To: karthikapillai@gmail.com\nSubject: ${subject}\n\n${body}`);
+      status.textContent = 'Copied. Paste into your email app and send when ready.';
+    } catch {
+      status.textContent = 'Clipboard access is unavailable. You can select your message and copy it manually, or open an email draft.';
+    }
+  });
+})();

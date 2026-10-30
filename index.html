@@ -16,7 +16,7 @@
 <header class="site-header" id="top">
   <a class="wordmark" href="#top" aria-label="Kathy, home">Kathy<span>.</span></a>
   <nav class="desktop-nav" aria-label="Main navigation"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
-  <a class="header-contact" href="mailto:karthikapillai@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+  <a class="header-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
   <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">Menu <span aria-hidden="true">+</span></button>
 </header>
 <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
@@ -49,8 +49,9 @@
 <section class="section-wrap section projects-section" id="projects" aria-labelledby="projects-title">
   <div class="section-kicker"><span>01 / PROJECTS</span><span>INTERACTIVE EXPLORATIONS</span></div>
   <div class="section-heading"><h2 id="projects-title">Ideas worth<br><em>exploring.</em></h2><p>My selected projects bring together practical engineering, data-driven thinking and applied machine learning. Interact with each preview, then explore the code or live experience.</p></div>
+  <div class="project-toolbar"><div class="project-filters" role="group" aria-label="Filter projects" hidden><button type="button" data-filter="all" aria-pressed="true">All projects</button><button type="button" data-filter="data" aria-pressed="false">Data & systems</button><button type="button" data-filter="ml" aria-pressed="false">Machine learning</button><button type="button" data-filter="apps" aria-pressed="false">Applications</button></div><p id="project-count" role="status" aria-live="polite">4 projects to explore</p></div>
   <div class="projects-grid">
-    <article class="project-card reveal" data-project="datamedic">
+    <article class="project-card reveal" data-project="datamedic" data-category="data">
       <div class="project-preview preview-medic">
         <div class="preview-topline"><span class="preview-label">DATA ENGINEERING</span><span>01 / 04</span></div>
         <div class="medic-window">
@@ -63,7 +64,7 @@
       </div>
       <div class="project-information"><div class="project-meta"><span>01 / SYSTEMS AND DATA</span><span>INTERACTIVE DEMO AVAILABLE</span></div><h3>DataMedic</h3><p>An interactive demonstration of data pipeline diagnosis and recovery. The public demo uses synthetic scenarios and recorded results to explain how failures can be investigated.</p><div class="tech-row"><span>Data Engineering</span><span>Diagnostics</span><span>Interactive Systems</span></div><div class="project-links"><a href="https://github.com/KarthikaPKumar/Nexora-demo" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="live-link" href="https://karthikapkumar.github.io/Nexora-demo/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a></div></div>
     </article>
-    <article class="project-card reveal" data-project="wildlife">
+    <article class="project-card reveal" data-project="wildlife" data-category="ml">
       <div class="project-preview preview-wildlife">
         <div class="preview-topline"><span class="preview-label">COMPUTER VISION</span><span>02 / 04</span></div>
         <div class="wildlife-frame">
@@ -76,7 +77,7 @@
       </div>
       <div class="project-information"><div class="project-meta"><span>02 / APPLIED MACHINE LEARNING</span><span>CODE AVAILABLE</span></div><h3>Wildlife Detection API</h3><p>A cloud-native inference service built around YOLOv8 and FastAPI, with an API deployment architecture using Docker, Kubernetes and infrastructure-as-code tooling.</p><div class="tech-row"><span>YOLOv8</span><span>FastAPI</span><span>Docker</span><span>Kubernetes</span></div><div class="project-links"><a href="https://github.com/KarthikaPKumar/Cloud-Native-Wildlife-Detection-Model" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><span class="unavailable-link">Public demo not available</span></div></div>
     </article>
-    <article class="project-card reveal" data-project="route">
+    <article class="project-card reveal" data-project="route" data-category="apps">
       <div class="project-preview preview-route">
         <div class="preview-topline"><span class="preview-label">LOCATION INTELLIGENCE</span><span>03 / 04</span></div>
         <div class="route-illustration">
@@ -88,7 +89,7 @@
       </div>
       <div class="project-information"><div class="project-meta"><span>03 / SPATIAL APPLICATIONS</span><span>LIVE APP LINK</span></div><h3>Sensory-Aware Route Planner</h3><p>A routing application designed to help people consider quieter, less crowded and lower-light journeys. Its backend uses serverless APIs and geospatial database technology.</p><div class="tech-row"><span>AWS Lambda</span><span>PostGIS</span><span>Node.js</span></div><div class="project-links"><a href="https://github.com/KarthikaPKumar/Serverless-Sensory-Aware-Router" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="live-link" href="https://industry-experience-onboarding.vercel.app/" target="_blank" rel="noopener noreferrer">Live app <span aria-hidden="true">↗</span></a></div></div>
     </article>
-    <article class="project-card reveal" data-project="speech">
+    <article class="project-card reveal" data-project="speech" data-category="ml">
       <div class="project-preview preview-speech">
         <div class="preview-topline"><span class="preview-label">NATURAL LANGUAGE PROCESSING</span><span>04 / 04</span></div>
         <div class="speech-art"><div class="speech-orbit">VOICE / TEXT / FEEDBACK</div><div class="wave-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="speech-caption">Conversation becomes insight</div></div>
@@ -114,12 +115,27 @@
 <section class="section-wrap section about-section" id="about" aria-labelledby="about-title">
   <div class="section-kicker"><span>03 / ABOUT</span><span>THE PERSON, NOT JUST THE CV</span></div>
   <div class="about-grid"><div><h2 id="about-title">Curiosity got<br>me <em>here.</em></h2></div><div class="about-copy"><p>I'm Kathy, a data science postgraduate at Monash University with professional experience in software and data platforms. I enjoy working across the full journey, from exploring a messy dataset to understanding what a result actually means.</p><p>What interests me most is the space between a technically correct answer and one that is genuinely useful. I care about clear communication, sound methods and well-built systems.</p><p>Outside the screen, I enjoy creative work and teaching. Both remind me that a good idea only matters when someone else can understand it.</p><a class="underlined-link" href="mailto:karthikapillai@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a></div></div>
+  <div class="quick-answers"><div><span class="eyebrow">A LITTLE MORE CONTEXT</span><h3>What would you like<br>to know?</h3></div><div class="answer-list"><details><summary>How do you approach a data problem?<span aria-hidden="true">+</span></summary><p>I start with the question and the decisions the answer needs to support. Then I explore the data, test assumptions and focus on communicating what the result means.</p></details><details><summary>What does your engineering background add?<span aria-hidden="true">+</span></summary><p>My work on IBM's Presto data platform gave me experience with security, monitoring, testing and developer tools. I bring that attention to reliability into my data work.</p></details><details><summary>Which project should I explore first?<span aria-hidden="true">+</span></summary><p>Start with <a href="#projects">DataMedic</a> for an interactive systems demonstration, or the Wildlife Detection API for an example of machine learning deployment. Each project links to its source and any public demo.</p></details></div></div>
   <div class="facts-grid"><div><span>EDUCATION</span><strong>Master of Data Science</strong><p>Monash University, Melbourne<br>2025 to 2026</p></div><div><span>BACKGROUND</span><strong>Computer Science Engineering</strong><p>B.Tech (Honours)<br>TKM College of Engineering</p></div><div><span>CORE INTERESTS</span><strong>Analysis meets engineering</strong><p>Machine learning, applied data science, data platforms and trustworthy systems</p></div></div>
 </section>
 
 <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="section-wrap">
-  <div class="section-kicker"><span>04 / CONTACT</span><span>LET'S TALK</span></div><p class="contact-prelude">Have a data problem, an interesting project or just a good question?</p><h2 id="contact-title">Let's <em>work on it.</em></h2>
-  <a class="contact-email" href="mailto:karthikapillai@gmail.com">karthikapillai@gmail.com <span aria-hidden="true">↗</span></a>
+  <div class="section-kicker"><span>04 / CONTACT</span><span>MELBOURNE / OPEN TO CONVERSATION</span></div>
+  <h2 id="contact-title">Let's <em>connect.</em></h2><p class="contact-prelude">A role, a project, or a question worth exploring. I'd love to hear what you have in mind.</p>
+  <div class="connect-grid">
+    <div class="connect-card"><span class="connect-kicker">01 / START A CONVERSATION</span><h3>What's on your mind?</h3><p>Send a little context and we can take it from there.</p>
+      <form id="contact-form" hidden>
+        <div class="form-row"><div><label for="contact-name">Your name</label><input id="contact-name" name="name" autocomplete="name" maxlength="100" required></div><div><label for="contact-email">Your email</label><input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required></div></div>
+        <label for="contact-topic">I'd like to talk about</label><select id="contact-topic" name="topic"><option>A job opportunity</option><option>A project or collaboration</option><option>A question about your work</option><option>A coffee chat</option><option>Just saying hello</option></select>
+        <label for="contact-message">Your message</label><textarea id="contact-message" name="message" rows="5" maxlength="2000" required placeholder="A short introduction and what you'd like to discuss..."></textarea><div class="message-counter"><span id="message-count">0</span> / 2,000</div>
+        <div class="contact-actions"><button class="button connect-primary" type="submit">Open email draft <span aria-hidden="true">↗</span></button><button class="copy-message" type="button" id="copy-message">Copy message</button></div>
+        <p class="form-note">Opens your email app. You review and send the message there. Nothing is submitted or saved by this website.</p><p id="contact-status" role="status" aria-live="polite"></p>
+      </form><noscript><p>Email me directly using the link below to start a conversation.</p></noscript>
+      <a class="direct-email" href="mailto:karthikapillai@gmail.com">karthikapillai@gmail.com ↗</a>
+    </div>
+    <div class="connect-side"><div class="connect-card coffee-card"><span class="connect-kicker">02 / MAKE IT A CONVERSATION</span><div class="coffee-icon" aria-hidden="true"><span></span><svg viewBox="0 0 80 70" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22h43v20c0 13-9 20-21 20S15 55 15 42V22Z M58 27h6c15 0 15 21-6 21 M9 67h57"/><path class="coffee-steam" d="M26 15c-8-8 8-8 0-15 M42 15c-8-8 8-8 0-15"/></svg></div><h3>A coffee and a good question.</h3><p>Interested in data, engineering or something I'm building? Suggest a virtual chat or a coffee in Melbourne.</p><a class="coffee-link" href="mailto:karthikapillai@gmail.com?subject=Coffee%20chat&body=Hi%20Kathy%2C%0A%0AI%27d%20love%20to%20chat%20about%20%5Btopic%5D.%0A%0AI%20prefer%20%5Bvirtual%20or%20Melbourne%5D.%20A%20few%20times%20that%20work%20for%20me%20are%20%5Btimes%20and%20timezone%5D.%0A%0AThanks!">Suggest a coffee chat <span aria-hidden="true">↗</span></a><p class="form-note">We'll arrange a time by email.</p></div>
+    <div class="social-cards"><a href="https://www.linkedin.com/in/karthikapillaikumar/" target="_blank" rel="noopener noreferrer"><span class="social-mark" aria-hidden="true">in</span><span>LinkedIn<small>Connect professionally</small></span><span aria-hidden="true">↗</span></a><a href="https://github.com/KarthikaPKumar" target="_blank" rel="noopener noreferrer"><span class="social-mark" aria-hidden="true">&lt;/&gt;</span><span>GitHub<small>Explore the source</small></span><span aria-hidden="true">↗</span></a></div></div>
+  </div>
   <footer class="footer"><span>© <span id="year">2026</span> KATHY</span><div><a href="https://github.com/KarthikaPKumar" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/karthikapillaikumar/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="#top">Back to top ↑</a></div></footer>
 </div></section>
 </main></body></html>
