@@ -67,7 +67,7 @@ export default function ProjectModal({ project, onClose, onSwitch }: { project: 
             </button>
             <div className="absolute inset-x-0 bottom-0 px-5 pb-6 sm:px-10">
               <motion.p className="mb-2 flex items-center gap-2 text-[11px] font-bold tracking-[0.34em] text-bone/80" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}>
-                <span className="font-display text-xl tracking-normal text-crimson-2">K</span> ORIGINAL
+                <span className="font-display text-xl tracking-normal text-crimson-2">K</span> PROJECT
               </motion.p>
               <motion.h2
                 id={`title-${project.id}-modal`}
@@ -107,7 +107,7 @@ export default function ProjectModal({ project, onClose, onSwitch }: { project: 
               </motion.div>
             )}
 
-            {project.live && <a href={project.live} target="_blank" rel="noreferrer" className="mt-4 inline-flex rounded-md bg-crimson px-6 py-3 font-semibold text-white">▶ Open live demo ↗</a>}
+            {project.live && <a href={project.live} target="_blank" rel="noreferrer" className="mt-4 inline-flex rounded-md bg-crimson px-6 py-3 font-semibold text-white">↗ Open live demo ↗</a>}
             <p className="mt-6 border-l-2 border-crimson pl-4 text-sm leading-relaxed text-mist">{project.limits}</p>
             {/* impact */}
             <motion.section variants={block} className="mt-12">
@@ -169,7 +169,7 @@ export default function ProjectModal({ project, onClose, onSwitch }: { project: 
 
             {/* more like this */}
             <motion.section variants={block} className="mt-14 border-t border-white/10 pt-8">
-              <h3 className="mb-4 font-sans text-lg font-semibold text-bone">More Originals</h3>
+              <h3 className="mb-4 font-sans text-lg font-semibold text-bone">More Projects</h3>
               <div className="grid gap-4 sm:grid-cols-2">
                 {more.map((p) => (
                   <button

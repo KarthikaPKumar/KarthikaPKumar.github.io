@@ -8,7 +8,7 @@ export function ProfileAvatar({ id, size = 'lg' }: { id: ProfileId; size?: 'sm' 
   const box = size === 'lg' ? 'h-24 w-24 sm:h-32 sm:w-32 md:h-36 md:w-36 rounded-xl' : 'h-8 w-8 rounded-md';
   if (id === 'kathy') {
     return (
-      <span className={`relative block overflow-hidden ${box}`} style={{ background: 'radial-gradient(circle at 50% 30%, #7a0f24, #1a0509)' }}>
+      <span className={`relative block overflow-hidden ${box}`} style={{ background: 'radial-gradient(circle at 50% 30%, #18543e, #071a12)' }}>
         <img src={profile.portrait.src} alt="" className="absolute inset-x-0 bottom-0 mx-auto h-full w-auto max-w-none -translate-x-[3%] object-cover object-top" />
       </span>
     );
@@ -17,7 +17,7 @@ export function ProfileAvatar({ id, size = 'lg' }: { id: ProfileId; size?: 'sm' 
   return (
     <span
       className={`relative flex items-center justify-center overflow-hidden font-display text-bone ${box}`}
-      style={{ background: `linear-gradient(145deg, ${p.color}, #0b0b10 120%)` }}
+      style={{ background: `linear-gradient(145deg, ${p.color}, #071713 120%)` }}
     >
       <span className={size === 'lg' ? 'text-4xl sm:text-5xl' : 'text-sm'}>{glyph}</span>
     </span>
@@ -41,16 +41,16 @@ export default function ProfileSelector({ onPick }: { onPick: (id: ProfileId) =>
       exit={{ opacity: 0, scale: 1.08, filter: 'blur(10px)' }}
       transition={{ duration: 0.7, ease: EASE }}
       role="dialog"
-      aria-label="Who's watching?"
+      aria-label="What brings you here?"
     >
-      <div aria-hidden className="absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_0%,rgba(229,19,43,0.14),transparent_70%)]" />
+      <div aria-hidden className="absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_0%,rgba(35,122,88,0.14),transparent_70%)]" />
       <motion.h2
         className="relative mb-10 text-center font-sans text-3xl font-medium tracking-tight text-bone sm:text-5xl"
         initial={{ opacity: 0, y: 20, filter: 'blur(8px)' }}
         animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
         transition={{ duration: 0.8, ease: EASE }}
       >
-        Who&apos;s watching?
+        What brings you here?
       </motion.h2>
       <motion.ul
         className="relative grid grid-cols-2 gap-6 sm:flex sm:gap-8"
@@ -74,7 +74,7 @@ export default function ProfileSelector({ onPick }: { onPick: (id: ProfileId) =>
         ))}
       </motion.ul>
       <p className="relative mt-12 max-w-md text-center text-xs leading-relaxed text-smoke">
-        Every profile watches the same true story of {profile.displayName} · it only changes what plays first.
+        Choose a perspective to bring the most relevant work into focus.
       </p>
     </motion.div>
   );

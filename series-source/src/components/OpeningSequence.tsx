@@ -6,12 +6,12 @@ import { EASE, Magnetic } from './fx';
 
 /**
  * The signature moment:
- * black → studio card → KATHY → THE SERIES → portrait reveal → role → ▶ PLAY
+ * black → studio card → KATHY → DATA · MODELS · IMPACT → portrait reveal → role → ↗ PLAY
  */
 const TIMELINE = [
   { at: 300, beat: 1 }, // studio card
   { at: 1900, beat: 2 }, // name
-  { at: 2700, beat: 3 }, // THE SERIES
+  { at: 2700, beat: 3 }, // DATA · MODELS · IMPACT
   { at: 3400, beat: 4 }, // portrait
   { at: 4300, beat: 5 }, // role
   { at: 5000, beat: 6 }, // play button
@@ -51,7 +51,7 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
       <motion.div
         aria-hidden
         className="absolute inset-0"
-        style={{ background: 'radial-gradient(60% 50% at 50% 55%, rgba(229,19,43,0.22), transparent 70%)' }}
+        style={{ background: 'radial-gradient(60% 50% at 50% 55%, rgba(35,122,88,0.22), transparent 70%)' }}
         initial={{ opacity: 0 }}
         animate={{ opacity: beat >= 2 ? [0, 0.9, 0.5, 1] : 0 }}
         transition={{ duration: 1.4 }}
@@ -136,9 +136,9 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
               data-cursor="play"
               onClick={onDone}
               tabIndex={beat >= 6 ? 0 : -1}
-              className="group flex items-center gap-3 rounded-full bg-bone px-9 py-4 font-sans text-base font-bold tracking-wide text-ink shadow-[0_0_60px_rgba(229,19,43,0.45)] transition hover:bg-white"
+              className="group flex items-center gap-3 rounded-full bg-bone px-9 py-4 font-sans text-base font-bold tracking-wide text-ink shadow-[0_0_60px_rgba(35,122,88,0.45)] transition hover:bg-white"
             >
-              <span className="text-lg transition-transform group-hover:scale-125">▶</span> PLAY
+              <span className="text-lg transition-transform group-hover:scale-125">↗</span> EXPLORE
             </button>
           </Magnetic>
         </motion.div>
@@ -149,7 +149,7 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
         onClick={onDone}
         className="absolute right-4 top-[calc(7vh+12px)] z-40 rounded-full border border-white/20 px-4 py-2 font-sans text-[11px] font-semibold tracking-[0.2em] text-mist transition hover:border-white/60 hover:text-bone"
       >
-        SKIP INTRO
+        SKIP TO PORTFOLIO
       </button>
     </motion.div>
   );

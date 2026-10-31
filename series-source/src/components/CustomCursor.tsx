@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { AnimatePresence, motion, useMotionValue, useSpring } from 'framer-motion';
 import { useFinePointer, useReducedMotionPref } from '../hooks/useMedia';
 
-const LABELS: Record<string, string> = { view: 'VIEW', play: '▶', link: '↗', drag: '↔', close: '✕' };
+const LABELS: Record<string, string> = { view: 'VIEW', play: '↗', link: '↗', drag: '↔', close: '✕' };
 
 /**
  * Minimal cursor: a small dot that grows into a labelled disc over elements with
@@ -64,7 +64,7 @@ export default function CustomCursor() {
         height: size,
         opacity: visible ? 1 : 0,
         scale: down ? 0.85 : 1,
-        backgroundColor: label ? 'rgba(229,19,43,0.92)' : hoverLink ? 'rgba(244,241,236,0.08)' : 'rgba(244,241,236,1)',
+        backgroundColor: label ? 'rgba(35,122,88,0.92)' : hoverLink ? 'rgba(244,241,236,0.08)' : 'rgba(244,241,236,1)',
         borderColor: hoverLink && !label ? 'rgba(244,241,236,0.7)' : 'rgba(244,241,236,0)',
       }}
       transition={{ type: 'spring', stiffness: 420, damping: 30 }}

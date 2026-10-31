@@ -127,7 +127,7 @@ export function SectionHeading({ kicker, title, aside }: { kicker: string; title
 }
 
 /** Lightweight drifting dust particles on a canvas · pauses when off screen. */
-export function Particles({ count = 46, color = '255,90,110', className = '' }: { count?: number; color?: string; className?: string }) {
+export function Particles({ count = 46, color = '128,214,173', className = '' }: { count?: number; color?: string; className?: string }) {
   const ref = useRef<HTMLCanvasElement>(null);
   const reduced = useReducedMotionPref();
 

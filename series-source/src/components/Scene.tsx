@@ -4,7 +4,7 @@ import { useTrackProgress } from '../hooks/sectionProgress';
 
 /**
  * A section of the series. Fades up out of black with a short blur-to-focus,
- * and reports viewing progress for the Continue Exploring row.
+ * and reports viewing progress for the Explore My Work row.
  */
 export default function Scene({ id, children, className = '' }: { id: string; children: ReactNode; className?: string }) {
   const ref = useRef<HTMLElement>(null);

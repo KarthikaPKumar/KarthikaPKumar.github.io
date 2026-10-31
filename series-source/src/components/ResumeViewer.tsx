@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import { achievements, education, experience, profile, projects, skillCategories } from '../data/portfolio';
 import { EASE, Magnetic, SectionHeading } from './fx';
 
-/** THE FULL STORY · a designed resume preview plus view / download actions. */
+/** CAREER SUMMARY · a designed resume preview plus view / download actions. */
 export default function ResumeSection({ onView }: { onView: () => void }) {
   return (
     <>
-      <SectionHeading kicker="The screenplay" title="The Full Story" />
+      <SectionHeading kicker="Experience & qualifications" title="Career Summary" />
       <div className="gutter grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-14">
         <motion.div
           initial={{ opacity: 0, y: 60, rotateX: 10 }}
@@ -20,7 +20,7 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
         </motion.div>
 
         <div className="lg:sticky lg:top-28 lg:self-start">
-          <p className="font-serif text-3xl italic leading-tight text-bone">Every episode, on one page.</p>
+          <p className="font-serif text-3xl italic leading-tight text-bone">Experience at a glance.</p>
           <p className="mt-3 text-sm leading-relaxed text-mist">
             Education, experience and projects, together in a printable career summary.
           </p>
@@ -32,7 +32,7 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
                 onClick={onView}
                 className="flex min-h-12 w-full items-center justify-center gap-2 rounded-md bg-bone px-6 text-[15px] font-bold text-ink transition hover:bg-white"
               >
-                ▶ View Resume
+                ↗ View Resume
               </button>
             </Magnetic>
             <Magnetic className="w-full">
@@ -42,7 +42,7 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
           <dl className="mt-8 grid grid-cols-3 gap-px overflow-hidden rounded-xl bg-white/10 text-center">
             {[
               { v: '3', k: 'Disciplines' },
-              { v: String(projects.length), k: 'Originals' },
+              { v: String(projects.length), k: 'Projects' },
               { v: String(experience.length), k: 'Roles' },
             ].map((s) => (
               <div key={s.k} className="bg-ink-2 px-2 py-4">
@@ -68,7 +68,7 @@ function CollapsibleSheet() {
       {!open && (
         <div className="absolute inset-x-0 bottom-0 flex h-48 items-end justify-center rounded-b-2xl bg-gradient-to-t from-ink via-ink/85 to-transparent pb-4 md:hidden">
           <button type="button" onClick={() => setOpen(true)} className="glass min-h-11 rounded-full px-5 text-sm font-semibold text-bone">
-            Read the full story ↓
+            Read the career summary ↓
           </button>
         </div>
       )}
@@ -82,11 +82,11 @@ function H({ children }: { children: string }) {
 
 export function ResumeSheet() {
   return (
-    <article className="relative overflow-hidden rounded-2xl bg-[linear-gradient(180deg,#121218,#0c0c11)] p-6 ring-1 ring-white/10 sm:p-10">
+    <article className="relative overflow-hidden rounded-2xl bg-[linear-gradient(180deg,#11251e,#091a14)] p-6 ring-1 ring-white/10 sm:p-10">
       <div aria-hidden className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-crimson-2/70 to-transparent" />
       <header className="mb-8 flex flex-wrap items-end justify-between gap-4 border-b border-white/10 pb-6">
         <div>
-          <p className="text-[10px] font-bold tracking-[0.34em] text-smoke">STARRING</p>
+          <p className="text-[10px] font-bold tracking-[0.34em] text-smoke">PROFILE</p>
           <h3 className="mt-1 font-display text-[clamp(1.9rem,4.4vw,3.2rem)] leading-[0.9] tracking-wide text-bone">{profile.fullName}</h3>
         </div>
         <div className="text-xs leading-relaxed text-mist sm:text-right">

@@ -12,7 +12,7 @@ export default function About() {
 
   return (
     <>
-      <SectionHeading kicker="The Pilot" title="About Me" />
+      <SectionHeading kicker="Background" title="About Me" />
       <div className="gutter grid items-center gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] lg:gap-16">
         <motion.div
           className="mx-auto w-full max-w-md lg:max-w-none"
@@ -23,7 +23,7 @@ export default function About() {
         >
         <Tilt max={5} className="rounded-2xl">
           <div className="relative aspect-[4/5] overflow-hidden rounded-2xl ring-1 ring-white/10">
-            <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_30%,#5a0b1b,#14060a_60%,#07070a)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_50%_30%,#174934,#071a13_60%,#061310)]" />
             <div className="absolute inset-0 opacity-50 [background-image:repeating-linear-gradient(90deg,rgba(255,255,255,0.03)_0px,rgba(255,255,255,0.03)_1px,transparent_1px,transparent_28px)]" />
             <img
               src={profile.portrait.src}
@@ -36,10 +36,10 @@ export default function About() {
             <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/90 to-transparent" />
             <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between">
               <div>
-                <p className="text-[10px] font-bold tracking-[0.3em] text-crimson-2">STARRING</p>
+                <p className="text-[10px] font-bold tracking-[0.3em] text-crimson-2">PROFILE</p>
                 <p className="font-display text-3xl leading-none text-bone">{profile.displayName}</p>
               </div>
-              <span className="rounded border border-white/30 px-1.5 text-[10px] font-bold text-bone">S01–S05</span>
+              <span className="rounded border border-white/30 px-1.5 text-[10px] font-bold text-bone">DATA & ENGINEERING</span>
             </div>
           </div>
         </Tilt>

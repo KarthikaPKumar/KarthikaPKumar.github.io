@@ -6,10 +6,10 @@ import { EASE, RevealText } from './fx';
 import ProjectCard from './ProjectCard';
 
 /**
- * ORIGINALS · on desktop the section pins and scrolls sideways like a title sequence.
+ * PROJECTS · on desktop the section pins and scrolls sideways like a title sequence.
  * On touch / small screens / reduced motion it becomes a native swipe rail.
  */
-export default function Originals({ onOpen }: { onOpen: (p: Project) => void }) {
+export default function Projects({ onOpen }: { onOpen: (p: Project) => void }) {
   const desktop = useDesktop();
   const reduced = useReducedMotionPref();
   return desktop && !reduced ? <PinnedOriginals onOpen={onOpen} /> : <RailOriginals onOpen={onOpen} />;
@@ -19,9 +19,9 @@ function Intro() {
   return (
     <div className="flex w-full shrink-0 flex-col justify-center lg:w-[34vw]">
       <p className="mb-3 flex items-center gap-3 text-[11px] font-semibold uppercase tracking-[0.32em] text-crimson-2">
-        <span className="h-px w-8 bg-crimson-2" /> {projects.length} Originals · {projects[0].year}
+        <span className="h-px w-8 bg-crimson-2" /> {projects.length} Projects · {projects[0].year}
       </p>
-      <RevealText as="h2" text="ORIGINALS" className="font-display text-[clamp(3.5rem,9vw,8rem)] leading-[0.85] text-bone" />
+      <RevealText as="h2" text="PROJECTS" className="font-display text-[clamp(3.5rem,9vw,8rem)] leading-[0.85] text-bone" />
       <p className="mt-4 max-w-sm text-[15px] leading-relaxed text-mist">
         Predictive models, data diagnostics, spatial data and ML applications. Open any title for its evidence, source code and limitations.
       </p>
@@ -77,7 +77,7 @@ function PinnedOriginals({ onOpen }: { onOpen: (p: Project) => void }) {
   return (
     <div ref={wrap} style={{ height: `calc(100vh + ${dist}px)` }} className="relative">
       <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden">
-        <div aria-hidden className="absolute inset-0 bg-[radial-gradient(50%_60%_at_70%_50%,rgba(229,19,43,0.10),transparent_70%)]" />
+        <div aria-hidden className="absolute inset-0 bg-[radial-gradient(50%_60%_at_70%_50%,rgba(35,122,88,0.10),transparent_70%)]" />
         <motion.div ref={track} style={{ x }} className="gutter relative flex items-center gap-8 pr-[12vw]" data-cursor="drag">
           <Intro />
           {projects.map((p, i) => (
@@ -86,7 +86,7 @@ function PinnedOriginals({ onOpen }: { onOpen: (p: Project) => void }) {
           <Outro />
         </motion.div>
         <div className="gutter absolute inset-x-0 bottom-8 flex items-center gap-4">
-          <span className="text-[10px] font-bold tracking-[0.3em] text-smoke">ORIGINALS</span>
+          <span className="text-[10px] font-bold tracking-[0.3em] text-smoke">PROJECTS</span>
           <div className="h-[2px] flex-1 overflow-hidden rounded bg-white/10">
             <motion.div className="h-full origin-left bg-crimson" style={{ scaleX: bar }} />
           </div>

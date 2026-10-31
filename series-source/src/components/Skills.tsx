@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { skillCategories, skillEvidence, type Skill } from '../data/portfolio';
 import { EASE, SectionHeading } from './fx';
 
-const HUES = ['#ff3d5a', '#4cc9ff', '#46e3a8', '#ffb547', '#b98bff', '#ff8a5c', '#7ee0ff'];
+const HUES = ['#80d6ad', '#4cc9ff', '#46e3a8', '#bdcda3', '#9bbfca', '#9bc6a3', '#7ee0ff'];
 
 export default function Skills() {
   const [cat, setCat] = useState(0);
@@ -12,7 +12,7 @@ export default function Skills() {
 
   return (
     <>
-      <SectionHeading kicker="Genres" title="My Skill Universe" aside={<p className="max-w-xs text-sm text-mist">Hover or tap a skill to see where it shows up across projects and professional experience.</p>} />
+      <SectionHeading kicker="Capabilities" title="Technical Expertise" aside={<p className="max-w-xs text-sm text-mist">Hover or tap a skill to see where it shows up across projects and professional experience.</p>} />
 
       <div className="gutter grid gap-8 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-14">
         {/* genre list */}

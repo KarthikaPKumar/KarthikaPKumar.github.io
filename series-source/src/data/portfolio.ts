@@ -14,17 +14,17 @@ export type IntroSlide = {kicker:string;title:string;lines:string[];chips?:strin
 export type ProfileId = 'kathy'|'recruiter'|'developer'|'creative';
 export type SectionId = 'about'|'journey'|'originals'|'picks'|'skills'|'moments'|'story';
 
-const crimson: Palette = {"from": "#24060b", "via": "#6e0d1d", "to": "#09070a", "accent": "#ff3d5a"};
-const amber: Palette = {"from": "#1c1003", "via": "#6b3c06", "to": "#0a0806", "accent": "#ffb547"};
+const crimson: Palette = {"from": "#062019", "via": "#18543e", "to": "#06130f", "accent": "#80d6ad"};
+const amber: Palette = {"from": "#102217", "via": "#3f5741", "to": "#09160e", "accent": "#bdcda3"};
 const ocean: Palette = {"from": "#04121f", "via": "#0f4c6e", "to": "#05080d", "accent": "#4cc9ff"};
-const violet: Palette = {"from": "#120822", "via": "#3d1a6e", "to": "#07060c", "accent": "#b98bff"};
+const violet: Palette = {"from": "#081b27", "via": "#204759", "to": "#07141b", "accent": "#9bbfca"};
 const jade: Palette = {"from": "#03150f", "via": "#0d5a40", "to": "#050a08", "accent": "#46e3a8"};
 export const profile = {
   "fullName": "Karthika Pillai Kumar",
   "displayName": "Kathy",
   "firstName": "KATHY",
-  "seriesTag": "THE SERIES",
-  "originalLabel": "A KATHY ORIGINAL",
+  "seriesTag": "DATA · MODELS · IMPACT",
+  "originalLabel": "KARTHIKA PILLAI KUMAR",
   "role": "Data Science · ML Engineering · Analytics Engineering",
   "tagline": [
     "Data Science",
@@ -140,10 +140,10 @@ export const projects: Project[] = [
     "live": "https://karthikapkumar.github.io/voltwise/",
     "limits": "Only four laboratory cells. These results do not establish vehicle-fleet performance, remaining lifetime or battery safety. The public site provides forecasts and metrics; the generative AI assistant runs locally through Ollama.",
     "palette": {
-      "from": "#24060b",
-      "via": "#6e0d1d",
-      "to": "#09070a",
-      "accent": "#ff3d5a"
+      "from": "#062019",
+      "via": "#18543e",
+      "to": "#06130f",
+      "accent": "#80d6ad"
     },
     "motif": "flow"
   },
@@ -177,10 +177,10 @@ export const projects: Project[] = [
     "live": "https://karthikapkumar.github.io/Nexora-demo/",
     "limits": "This is an illustrative systems demonstration. It is not connected to production pipelines and does not autonomously repair real infrastructure.",
     "palette": {
-      "from": "#1c1003",
-      "via": "#6b3c06",
-      "to": "#0a0806",
-      "accent": "#ffb547"
+      "from": "#102217",
+      "via": "#3f5741",
+      "to": "#09160e",
+      "accent": "#bdcda3"
     },
     "motif": "tenants"
   },
@@ -255,10 +255,10 @@ export const projects: Project[] = [
     "live": "",
     "limits": "There is no public running demo linked here. No production accuracy or deployment availability is claimed by this portfolio.",
     "palette": {
-      "from": "#120822",
-      "via": "#3d1a6e",
-      "to": "#07060c",
-      "accent": "#b98bff"
+      "from": "#081b27",
+      "via": "#204759",
+      "to": "#07141b",
+      "accent": "#9bbfca"
     },
     "motif": "shield"
   },
@@ -597,10 +597,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "Computer science",
         "palette": {
-          "from": "#24060b",
-          "via": "#6e0d1d",
-          "to": "#09070a",
-          "accent": "#ff3d5a"
+          "from": "#062019",
+          "via": "#18543e",
+          "to": "#06130f",
+          "accent": "#80d6ad"
         }
       }
     ]
@@ -621,10 +621,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "2022 – 2025",
         "palette": {
-          "from": "#1c1003",
-          "via": "#6b3c06",
-          "to": "#0a0806",
-          "accent": "#ffb547"
+          "from": "#102217",
+          "via": "#3f5741",
+          "to": "#09160e",
+          "accent": "#bdcda3"
         }
       },
       {
@@ -678,10 +678,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "2025 – 2026",
         "palette": {
-          "from": "#120822",
-          "via": "#3d1a6e",
-          "to": "#07060c",
-          "accent": "#b98bff"
+          "from": "#081b27",
+          "via": "#204759",
+          "to": "#07141b",
+          "accent": "#9bbfca"
         }
       }
     ]
@@ -703,10 +703,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "Portfolio projects",
         "palette": {
-          "from": "#120822",
-          "via": "#3d1a6e",
-          "to": "#07060c",
-          "accent": "#b98bff"
+          "from": "#081b27",
+          "via": "#204759",
+          "to": "#07141b",
+          "accent": "#9bbfca"
         }
       },
       {
@@ -735,10 +735,10 @@ export const seasons: Season[] = [
         ],
         "runtime": "Portfolio projects",
         "palette": {
-          "from": "#24060b",
-          "via": "#6e0d1d",
-          "to": "#09070a",
-          "accent": "#ff3d5a"
+          "from": "#062019",
+          "via": "#18543e",
+          "to": "#06130f",
+          "accent": "#80d6ad"
         }
       }
     ]
@@ -746,7 +746,7 @@ export const seasons: Season[] = [
   {
     "number": 5,
     "title": "What's Next",
-    "period": "Now streaming",
+    "period": "Current focus",
     "synopsis": "Looking for the next question worth solving.",
     "episodes": [
       {
@@ -758,7 +758,7 @@ export const seasons: Season[] = [
           "ML Engineering",
           "Analytics Engineering"
         ],
-        "runtime": "Now streaming",
+        "runtime": "Current focus",
         "palette": {
           "from": "#03150f",
           "via": "#0d5a40",
@@ -775,10 +775,10 @@ export const topPicks: TopPick[] = [
     "title": "IBM watsonx.data",
     "detail": "Presto and platform tooling",
     "palette": {
-      "from": "#24060b",
-      "via": "#6e0d1d",
-      "to": "#09070a",
-      "accent": "#ff3d5a"
+      "from": "#062019",
+      "via": "#18543e",
+      "to": "#06130f",
+      "accent": "#80d6ad"
     }
   },
   {
@@ -786,10 +786,10 @@ export const topPicks: TopPick[] = [
     "title": "Voltwise",
     "detail": "NASA lab data · held-out evaluation",
     "palette": {
-      "from": "#1c1003",
-      "via": "#6b3c06",
-      "to": "#0a0806",
-      "accent": "#ffb547"
+      "from": "#102217",
+      "via": "#3f5741",
+      "to": "#09160e",
+      "accent": "#bdcda3"
     }
   },
   {
@@ -808,10 +808,10 @@ export const topPicks: TopPick[] = [
     "title": "Monash",
     "detail": "Master of Data Science",
     "palette": {
-      "from": "#120822",
-      "via": "#3d1a6e",
-      "to": "#07060c",
-      "accent": "#b98bff"
+      "from": "#081b27",
+      "via": "#204759",
+      "to": "#07141b",
+      "accent": "#9bbfca"
     }
   },
   {
@@ -830,10 +830,10 @@ export const topPicks: TopPick[] = [
     "title": "Melbourne Routes",
     "detail": "Street graphs and timestamped snapshots",
     "palette": {
-      "from": "#24060b",
-      "via": "#6e0d1d",
-      "to": "#09070a",
-      "accent": "#ff3d5a"
+      "from": "#062019",
+      "via": "#18543e",
+      "to": "#06130f",
+      "accent": "#80d6ad"
     }
   },
   {
@@ -841,10 +841,10 @@ export const topPicks: TopPick[] = [
     "title": "FastAPI",
     "detail": "Portfolio API architecture",
     "palette": {
-      "from": "#1c1003",
-      "via": "#6b3c06",
-      "to": "#0a0806",
-      "accent": "#ffb547"
+      "from": "#102217",
+      "via": "#3f5741",
+      "to": "#09160e",
+      "accent": "#bdcda3"
     }
   },
   {
@@ -863,10 +863,10 @@ export const topPicks: TopPick[] = [
     "title": "Teaching",
     "detail": "Junior Engineers",
     "palette": {
-      "from": "#120822",
-      "via": "#3d1a6e",
-      "to": "#07060c",
-      "accent": "#b98bff"
+      "from": "#081b27",
+      "via": "#204759",
+      "to": "#07141b",
+      "accent": "#9bbfca"
     }
   },
   {
@@ -907,7 +907,7 @@ export const introSlides: IntroSlide[] = [
     ]
   },
   {
-    "kicker": "Originals",
+    "kicker": "Projects",
     "title": "Models. Systems. Questions.",
     "lines": [
       "Voltwise · battery capacity forecasting",
@@ -924,7 +924,7 @@ export const introSlides: IntroSlide[] = [
     ]
   },
   {
-    "kicker": "Next episode",
+    "kicker": "Next steps",
     "title": "Let’s build something useful",
     "lines": [
       "Data Science · ML Engineering · Analytics Engineering",
@@ -942,39 +942,39 @@ export const viewerProfiles: {
   {
     id: 'kathy',
     name: 'Kathy',
-    blurb: 'The full series, in order',
-    color: '#e5132b',
+    blurb: 'Explore the complete portfolio',
+    color: '#237a58',
     order: ['about', 'journey', 'originals', 'picks', 'skills', 'moments', 'story'],
   },
   {
     id: 'recruiter',
     name: 'Recruiter',
-    blurb: 'Resume, achievements & skills first',
+    blurb: 'Experience, results & skills',
     color: '#4cc9ff',
     order: ['story', 'moments', 'skills', 'originals', 'about', 'journey', 'picks'],
   },
   {
     id: 'developer',
-    name: 'Developer',
-    blurb: 'Projects, stack & GitHub first',
+    name: 'Engineer',
+    blurb: 'Projects, architecture & code',
     color: '#46e3a8',
     order: ['originals', 'skills', 'journey', 'moments', 'about', 'picks', 'story'],
   },
   {
     id: 'creative',
-    name: 'Creative',
-    blurb: 'The story arc & highlights first',
-    color: '#ffb547',
+    name: 'Collaborator',
+    blurb: 'Background, interests & highlights',
+    color: '#bdcda3',
     order: ['journey', 'picks', 'originals', 'moments', 'about', 'skills', 'story'],
   },
 ];
 
 export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: string; palette: Palette }> = {
-  about: { nav: 'About', card: 'About Me', meta: 'The Pilot • Education & experience', palette: violet },
-  journey: { nav: 'Journey', card: 'My Journey', meta: `${seasons.length} Seasons • ${seasons.reduce((n, s) => n + s.episodes.length, 0)} Episodes`, palette: amber },
-  originals: { nav: 'Originals', card: 'My Projects', meta: `${projects.length} Originals • 2026`, palette: crimson },
-  picks: { nav: 'Top Picks', card: 'Top Picks', meta: '10 highlights from the work', palette: jade },
+  about: { nav: 'About', card: 'About Me', meta: 'Background • Education & experience', palette: violet },
+  journey: { nav: 'Journey', card: 'Career Journey', meta: `${seasons.length} Stages • ${seasons.reduce((n, s) => n + s.episodes.length, 0)} Milestones`, palette: amber },
+  originals: { nav: 'Projects', card: 'My Projects', meta: `${projects.length} Projects • 2026`, palette: crimson },
+  picks: { nav: 'Key Strengths', card: 'Key Strengths', meta: '10 selected strengths', palette: jade },
   skills: { nav: 'Skills', card: 'My Skills', meta: `${skillCategories.length} Categories`, palette: ocean },
-  moments: { nav: 'Moments', card: 'My Highlights', meta: `${achievements.length} Career & Project Highlights`, palette: crimson },
-  story: { nav: 'Resume', card: 'The Full Story', meta: 'Career summary • View & print', palette: violet },
+  moments: { nav: 'Highlights', card: 'My Highlights', meta: `${achievements.length} Career & Project Highlights`, palette: crimson },
+  story: { nav: 'Resume', card: 'Career Summary', meta: 'Career summary • View & print', palette: violet },
 };

@@ -8,7 +8,7 @@ import { EASE } from './fx';
 const SLIDE_MS = 3600;
 
 /**
- * "▶ Play Intro": darken → zoom into the portrait → a full-screen highlight reel
+ * "↗ View Overview": darken → zoom into the portrait → a full-screen highlight reel
  * built only from resume facts → fade back to the portfolio.
  */
 export default function PlayIntro({ onClose }: { onClose: () => void }) {
@@ -90,7 +90,7 @@ export default function PlayIntro({ onClose }: { onClose: () => void }) {
       transition={{ duration: 0.6 }}
       role="dialog"
       aria-modal="true"
-      aria-label="Intro highlight reel"
+      aria-label="Professional overview"
     >
       {/* Zoom into the portrait */}
       <motion.div
@@ -108,7 +108,7 @@ export default function PlayIntro({ onClose }: { onClose: () => void }) {
           className="h-[88vh] w-auto max-w-none object-contain [mask-image:linear-gradient(to_bottom,black_60%,transparent)]"
         />
       </motion.div>
-      <div aria-hidden className="absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_45%,rgba(120,10,25,0.35),transparent_70%)]" />
+      <div aria-hidden className="absolute inset-0 bg-[radial-gradient(60%_60%_at_50%_45%,rgba(17,68,47,0.35),transparent_70%)]" />
 
       {/* progress bars */}
       {phase !== 'zoom' && (
@@ -137,7 +137,7 @@ export default function PlayIntro({ onClose }: { onClose: () => void }) {
               transition={{ duration: 0.7, ease: EASE }}
             >
               <p className="mb-4 text-[11px] font-bold uppercase tracking-[0.5em] text-crimson-2 sm:text-xs">
-                Episode {String(index + 1).padStart(2, '0')} · {slide.kicker}
+                SECTION {String(index + 1).padStart(2, '0')} · {slide.kicker}
               </p>
               <h2 className="font-display leading-[0.88] text-bone" style={{ fontSize: 'clamp(3rem, 10vw, 8.5rem)' }}>
                 {slide.title}
@@ -174,7 +174,7 @@ export default function PlayIntro({ onClose }: { onClose: () => void }) {
           )}
           {phase === 'end' && (
             <motion.div key="end" initial={{ opacity: 0, letterSpacing: '0.6em' }} animate={{ opacity: 1, letterSpacing: '0.2em' }} transition={{ duration: 1.2, ease: EASE }}>
-              <p className="font-display text-5xl text-bone sm:text-7xl">NOW STREAMING</p>
+              <p className="font-display text-5xl text-bone sm:text-7xl">LET’S CONNECT</p>
               <p className="mt-3 text-xs font-semibold tracking-[0.4em] text-mist">{profile.displayName.toUpperCase()}</p>
             </motion.div>
           )}
@@ -199,7 +199,7 @@ export default function PlayIntro({ onClose }: { onClose: () => void }) {
               aria-label={paused ? 'Resume' : 'Pause'}
               className="flex h-11 w-11 items-center justify-center rounded-full border border-white/25 text-bone transition hover:bg-white/10"
             >
-              {paused ? '▶' : '❚❚'}
+              {paused ? '↗' : '❚❚'}
             </button>
           )}
           <span className="hidden text-[11px] tracking-[0.2em] text-smoke sm:block">SPACE · ← → · ESC</span>
@@ -210,7 +210,7 @@ export default function PlayIntro({ onClose }: { onClose: () => void }) {
           data-cursor="close"
           className="rounded-full bg-bone px-5 py-2.5 text-xs font-bold tracking-[0.18em] text-ink transition hover:bg-white"
         >
-          BACK TO BROWSE
+          BACK TO PORTFOLIO
         </button>
       </div>
     </motion.div>

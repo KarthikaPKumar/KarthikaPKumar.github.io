@@ -2,7 +2,7 @@ import { useEffect, useSyncExternalStore, type RefObject } from 'react';
 
 /**
  * Tracks how much of each section the visitor has actually watched (0–1),
- * so the "Continue Exploring" progress bars reflect real viewing, not fake numbers.
+ * so the "Explore My Work" progress bars reflect real viewing, not fake numbers.
  */
 const progress: Record<string, number> = {};
 const listeners = new Set<() => void>();
